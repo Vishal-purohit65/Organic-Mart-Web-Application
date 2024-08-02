@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <title>Organic Mart</title>
+        <link rel="shortcut icon" href="images/fav-icon.png"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <!-- <script src="script.js"></script> -->
+    </head>
+    <body>
+       
+        <nav class="navigation">
+            <a href="index.html" class="logo">
+                <span>Organic</span>Mart
+            </a>
+
+            <input type="checkbox" name="" id="menu-btn" class="menu-btn">
+            <label for="menu-btn" class="menu-icon">
+                <span class="nav-icon"></span>
+            </label>
+
+            <!-- menu-bar -->
+            <ul class="menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#category">Categories</a></li>
+                <li><a href="#popular-bundle-pack">Our Packages</a></li>
+                <li><a href="./contact.html">About Us</a></li>
+            </ul>
+
+            <!-- right-nav -->
+            <div class="right-nav">
+                <a href="#" class="like">
+                    <i class="fa fa-regular fa fa-heart"></i>
+                    <span id="wish-value" class="wish-value">0</span>
+        
+                </a>
+                <a href="./cart.html" class="cart">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span id="cart-value" class="cart-value">0</span>
+                </a>
+            </div>
+        </nav>
+
+        <!-- Search-banner  -->
+        <section id="search-banner">
+            <img src="images/bg-1.png" class="bg-1" alt="bg">
+            <img src="images/bg-2.png" class="bg-2" alt="bg-2">
+
+            <div class="search-bannet-text">
+                <h1>Order Your Daily Groceries</h1>
+                <strong>#Free Delivery</strong>
+
+                <form action="" class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" name="search" id="search-box" class="search-input" placeholder="Search your daily groceries" required>
+                    <input type="submit" value="Search" class="search-btn">
+                    
+                </form>
+            </div>
+        </section>
+
+        <!-- category  -->
+        <section id = "category">
+            <div class = "category-heading">
+                <h2>Category</h2>
+                <span>All</span>
+            </div>
+ 
+            <div class = "category-container">
+                <a href="#" class = "category-box">
+                    <img src="images/fish.png" alt="Fish">
+                    <span>Fish & Meat</span>
+                </a>
+          
+                <a href="#" class="category-box">
+                    <img src="images/Vegetables.png" alt="Fish">
+                    <span>Vegetables</span>
+                </a>
+       
+                <a href="#" class="category-box">
+                    <img src="images/medicine.png" alt="Fish">
+                    <span>Medicine</span>
+                </a>
+        
+                <a href="#" class="category-box">
+                    <img src="images/baby.png" alt="Fish">
+                    <span>Baby</span>
+                </a>
+           
+                <a href="#" class="category-box">
+                    <img src="images/office.png" alt="Fish">
+                    <span>Office</span>
+                </a>
+          
+                <a href="#" class="category-box">
+                    <img src="images/beauty.png" alt="Fish">
+                    <span>Beauty</span>
+                </a>
+      
+                <a href="#" class="category-box">
+                    <img src="images/Gardening.png" alt="Fish">
+                    <span>Gardening</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- popular product  -->
+        <section id="popular-product">
+            <div class="product-heading">
+                <h3>Popular Product</h3>
+                <span>All</span>
+            </div>
+
+            <div class="product-container">
+
+                <div class="product-box">
+                    <img src="images/apple.png" alt="apple">
+                    <strong>Apple</strong>
+                    <span class="quantity">1 KG</span>
+                    <span class="price">3$</span>
+
+                    <button id="addToCartButton" class="cart-btn">
+                        <i class="fas fa-shopping-bag"></i> Add To Cart
+                    </button>
+
+                    <a href="#" class="like-btn">
+                        <i class="fas fa-heart"></i>
+                    </a>
+                </div>
+                <div class="product-box">
+                    <img src="images/chili.png" alt="chilli">
+                    <strong>Chili</strong>
+                    <span class="quantity">1 KG</span>
+                    <span class="price">3$</span>
+
+                    <button id="addToCartButton" class="cart-btn">
+                        <i class="fas fa-shopping-bag"></i> Add To Cart
+                    </button>
+
+                    <a href="#" class="like-btn">
+                        <i class="fas fa-heart"></i>
+                    </a>
+                </div>
+                <div class="product-box">
+                    <img src="images/onion.png" alt="onion">
+                    <strong>Onion</strong>
+                    <span class="quantity">1 KG</span>
+                    <span class="price">3$</span>
+
+                    <button id="addToCartButton" class="cart-btn">
+                        <i class="fas fa-shopping-bag"></i> Add To Cart
+                    </button>
+
+                    <a href="#" class="like-btn">
+                        <i class="fas fa-heart"></i>
+                    </a>
+                </div>
+                <div class="product-box">
+                    <img src="images/patato.png" alt="potato">
+                    <strong>Potato</strong>
+                    <span class="quantity">1 KG</span>
+                    <span class="price">3$</span>
+
+                    <button id="addToCartButton" class="cart-btn">
+                        <i class="fas fa-shopping-bag"></i> Add To Cart
+                    </button>
+
+                    <a href="#" class="like-btn">
+                        <i class="fas fa-heart"></i>
+                    </a>
+                </div>
+                <div class="product-box">
+                    <img src="images/garlic.png" alt="garlic">
+                    <strong>Garlic</strong>
+                    <span class="quantity">1 KG</span>
+                    <span class="price">3$</span>
+
+                    <button id="addToCartButton" class="cart-btn">
+                        <i class="fas fa-shopping-bag"></i> Add To Cart
+                    </button>
+
+                    <a href="#" class="like-btn">
+                        <i class="fas fa-heart"></i>
+                    </a>
+                </div>
+                <div class="product-box">
+                    <img src="images/tamato.png" alt="Tomato">
+                    <strong>Tomato</strong>
+                    <span class="quantity">1 KG</span>
+                    <span class="price">3$</span>
+
+                    <button id="addToCartButton" class="cart-btn">
+                        <i class="fas fa-shopping-bag"></i> Add To Cart
+                    </button>
+
+                    <a href="#" class="like-btn">
+                        <i class="fas fa-heart"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- popular bunde pack  -->
+        <section id="popular-bundle-pack">
+            <div class="product-heading">
+                <h3>Popular Bundle Pack</h3>
+            </div>
+
+            <div class="product-container">
+
+                <div class="product-box" id="addToCartBigPack">
+                    <img src="images/pack1.png" alt="pack">
+                    <strong>Big Pack</strong>
+                    <span class="quantity">Lemon, Tomato, Potato+4</span>
+                    <span class="price">9$</span>
+
+                    <a href="#" class="cart-btn">
+                        <i class="fas fa-shopping-bag"></i> Add To Cart
+                    </a>
+
+                    <a href="#" class="like-btn">
+                        <i class="fas fa-heart"></i>
+                    </a>
+                </div>
+                <div class="product-box" id="addToCartLargePack">
+                    <img src="images/pack2.jpg" alt="large-pack">
+                    <strong>Large Pack</strong>
+                    <span class="quantity">Lemon, Tomato, Potato+2</span>
+                    <span class="price">5$</span>
+
+                    <a href="#" class="cart-btn">
+                        <i class="fas fa-shopping-bag"></i> Add To Cart
+                    </a>
+
+                    <a href="#" class="like-btn">
+                        <i class="fas fa-heart"></i>
+                    </a>
+                </div>
+                <div class="product-box" id="addToCartSmallPack">
+                    <img src="images/pack3.png" alt="Small-pack">
+                    <strong>Small Pack</strong>
+                    <span class="quantity">Lemon, Tomato, Potato</span>
+                    <span class="price">3$</span>
+
+                    <a href="#" class="cart-btn">
+                        <i class="fas fa-shopping-bag"></i> Add To Cart
+                    </a>
+
+                    <a href="#" class="like-btn">
+                        <i class="fas fa-heart"></i>
+                    </a>
+                </div>
+                <div class="product-box" id="addToCartBigPack">
+                    <img src="images/pack1.png" alt="pack">
+                    <strong>Big Pack</strong>
+                    <span class="quantity">Lemon, Tomato, Potato+4</span>
+                    <span class="price">9$</span>
+
+                    <a href="#" class="cart-btn">
+                        <i class="fas fa-shopping-bag"></i> Add To Cart
+                    </a>
+
+                    <a href="#" class="like-btn">
+                        <i class="fas fa-heart"></i>
+                    </a>
+                </div>
+                <div class="product-box" id="addToCartLargePack">
+                    <img src="images/pack2.jpg" alt="large-pack">
+                    <strong>Large Pack</strong>
+                    <span class="quantity">Lemon, Tomato, Potato+2</span>
+                    <span class="price">5$</span>
+
+                    <a href="#" class="cart-btn">
+                        <i class="fas fa-shopping-bag"></i> Add To Cart
+                    </a>
+
+                    <a href="#" class="like-btn">
+                        <i class="fas fa-heart"></i>
+                    </a>
+                </div>
+                <div class="product-box" id="addToCartSmallPack">
+                    <img src="images/pack3.png" alt="Small-pack">
+                    <strong>Small Pack</strong>
+                    <span class="quantity">Lemon, Tomato, Potato</span>
+                    <span class="price">3$</span>
+
+                    <a href="#" class="cart-btn">
+                        <i class="fas fa-shopping-bag"></i> Add To Cart
+                    </a>
+
+                    <a href="#" class="like-btn">
+                        <i class="fas fa-heart"></i>
+                    </a>
+                </div>
+        </section>
+
+
+        <!-- CLients  -->
+        <section id="clients">
+            <div class="client-heading">
+                <h3>What our Client's Say</h3>
+            </div>
+
+            <div class="client-box-container">
+                <div class="client-box">
+                    <div class="client-profile">
+                        <img src="images/client-1.jpg" alt="client">
+                        <div class="profile-text">
+                            <strong>Vishal Purohit</strong>
+                            <span>CEO</span>
+                        </div>
+                    </div>
+
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+
+                    <!-- comment  -->
+                    <p>Great services provided, on time delivery with good food taste</p>
+                </div>
+                <div class="client-box">
+                    <div class="client-profile">
+                        <img src="images/client-2.jpg" alt="client">
+                        <div class="profile-text">
+                            <strong>Meet Patel</strong>
+                            <span>Software Developer</span>
+                        </div>
+                    </div>
+
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+
+                    <!-- comment  -->
+                    <p>Great services provided, on time delivery with good food taste</p>
+                </div>
+                <div class="client-box">
+                    <div class="client-profile">
+                        <img src="images/client-3.jpg" alt="client">
+                        <div class="profile-text">
+                            <strong>Sahil Vohra</strong>
+                            <span>Marketer</span>
+                        </div>
+                    </div>
+
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+
+                    <!-- comment  -->
+                    <p>Great services provided, on time delivery with good food taste</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- partners  -->
+        <section id="partner">
+            <div class="partner-heading">
+                <h3>Our Trusted Partner</h3>
+            </div>
+
+            <div class="logo-container">
+                <img src="images/logo-1.png" alt="logo">
+                <img src="images/logo-2.png" alt="logo">
+                <img src="images/logo-3.png" alt="logo">
+                <img src="images/logo-4.png" alt="logo">
+            </div>
+        </section>
+
+
+        <!-- donwload-app  -->
+        <section id="download-app">
+            <div class="app-img">
+                <img src="images/mobile-app.png" alt="app">
+            </div>
+
+            <div class="download-app-text">
+                <strong>Download App</strong>
+                <p>eGrocery Provides mobile application to order and get food delivered to any corner of india within seconds so go fast and download our app from playstore.</p>
+
+                <div class="download-btns">
+                    <a href="#"><img src="images/appstore-btn.png" alt=""></a>
+                    <a href="#"><img src="images/googleplay-btn.png" alt=""></a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- footer  -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <a href="#"><span>Organic</span>Mart</a>
+
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <strong>Product</strong>
+                    <ul>
+                        <li><a href="#">Clothes</a></li>
+                        <li><a href="#">Popular</a></li>
+                        <li><a href="#">Packages</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <strong>Category</strong>
+                    <ul>
+                        <li><a href="#">Beauty</a></li>
+                        <li><a href="#">Kids</a></li>
+                        <li><a href="#">Clothes</a></li>
+                        <li><a href="#">Fashion</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <strong>Contact</strong>
+                    <ul>
+                        <li><a href="#">90/D new V.V. nagar, Anand, Gujarat</a></li>
+                        <li><a href="#">Phone: 8965467543</a></li>
+                        <li><a href="#">email: grocery@gmail.com</a></li>
+                        <li><p>
+                            <form action="https://formsubmit.co/el/jucego">
+                                <button class="form" id="con">Contact Us</button>
+                            </form>
+                        </p>
+                    </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>

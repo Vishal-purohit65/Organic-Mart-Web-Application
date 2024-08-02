@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/fav-icon.png"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </head>
+</head>
+<body>
+    
+    <nav class="navigation">
+        <a href="index.html" class="logo">
+            <span>Organic</span>Mart
+        </a>
+
+        <input type="checkbox" name="" id="menu-btn" class="menu-btn">
+        <label for="menu-btn" class="menu-icon">
+            <span class="nav-icon"></span>
+        </label>
+
+        <!-- menu-bar -->
+        <ul class="menu">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="#category">Categories</a></li>
+            <li><a href="#popular-bundle-pack">Our Packages</a></li>
+            <li><a href="#download-app">Our App</a></li>
+        </ul>
+
+        <!-- right-nav -->
+        <div class="right-nav">
+            <a href="#" class="like">
+                <i class="fa fa-regular fa fa-heart"></i>
+                <div class="shopping">
+                <span id="wish-value" class="wish-value">0</span>
+                </div>
+            </a>
+            <a href="#" class="cart">
+                <i class="fa fa-shopping-cart"></i>
+                <span id="cart-value" class="cart-value">0</span>
+            </a>
+        </div>
+    </nav>
+
+    <section id="page-header">
+        <h2>#stayHome</h2>
+        <p>Save more with coupons and upto 70% off</p>
+    </section>
+
+    <div class="products-containers"> 
+        <div class="product-header">
+            <h5 class="product-title">PRODUCT</h5>
+            <h5 class="price">PRICE</h5>
+            <h5 class="quantity">QUANTITY</h5>
+            <h5 class="total">TOTAL</h5>
+        </div>
+        <div class="products">
+            
+        </div>
+        <div class="billing">
+            
+        </div>
+    </div>
+        <!-- <section id="cart" class="section-p1">
+            <table width="100%">
+                <thead>
+                    <tr>
+                        <td>Remove</td>
+                        <td>Image</td>
+                        <td>Product</td>
+                        <td>Price</td>
+                        <td>Quantity</td>
+                        <td>Subtotal</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href=""><i class="far fa-times-circle"></i></a></td>
+                        <td><img src="images/apple.png" alt=""></td>
+                        <td>Apple</td>
+                        <td>$3</td>
+                        <td><input type="number"value="1"></td>
+                        <td>$3</td>
+                    </tr>
+                    <tr>
+                        <td><a href=""><i class="far fa-times-circle"></i></a></td>
+                        <td><img src="images/chili.png" alt=""></td>
+                        <td>Chilli</td>
+                        <td>$3</td>
+                        <td><input type="number"value="1"></td>
+                        <td>$3</td>
+                    </tr>
+                    <tr>
+                        <td><a href=""><i class="far fa-times-circle"></i></a></td>
+                        <td><img src="images/patato.png" alt=""></td>
+                        <td>Potato</td>
+                        <td>$3</td>
+                        <td><input type="number"value="1"></td>
+                        <td>$3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section> -->
+
+        <section id="cart-add" class="section-p1">
+            <div id="coupon">
+                <h3>Apply Coupon</h3>
+                <div>
+                    <input type="text" placeholder="Enter your coupon" class="coupon-input">
+                    <button class="normal">Apply</button>
+                </div>
+            </div>
+            <div id="subtotal">
+                <h3>Cart Total</h3>
+                <table>
+                    
+                    <tr>
+                        <td>Cart Total</td>
+                        <td><div id="basketTotalValue">$0.00</div></td>
+                    </tr>
+                    
+                </table>
+                <button class="pay"><span class="normal">Proceed to Checkout</span></button>
+                <!-- <a href="https://buy.stripe.com/test_fZe4ju5Sp1lqbIY5kl"></a> -->
+            </div>
+        </section>
+
+
+    <footer class="section-p1">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <a href="#"><span>Organic</span>Mart</a>
+
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <strong>Product</strong>
+                <ul>
+                    <li><a href="#">Clothes</a></li>
+                    <li><a href="#">Popular</a></li>
+                    <li><a href="#">Packages</a></li>
+                    <li><a href="#">New </a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <strong>Category</strong>
+                <ul>
+                    <li><a href="#">Beauty</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">Clothes</a></li>
+                    <li><a href="#">Fashion</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <strong>Contact</strong>
+                <ul>
+                    <li><a href="#">Phone: 8965467543</a></li>
+                    <li><a href="#">email: grocery@gmail.com</a></li>
+                    <li><a href="#">Packages</a></li>
+                    <li><a href="#">New</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>
